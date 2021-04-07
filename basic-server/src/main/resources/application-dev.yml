@@ -3,10 +3,10 @@ server:
 
 
 spring:
-  security:
-    user:
-      name: charon
-      password: charon
+  #security:
+    #user:
+      #name: charon
+      #password: charon
   jackson:
     date-format: yyyy-MM-dd HH:mm:ss
     time-zone: GMT+8
