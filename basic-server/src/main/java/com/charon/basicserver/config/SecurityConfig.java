@@ -1,9 +1,6 @@
 package com.charon.basicserver.config;
 
-import com.charon.basicserver.config.auth.MyAccessDeniedHandler;
-import com.charon.basicserver.config.auth.MyAuthenticationEntryPoint;
-import com.charon.basicserver.config.auth.MyAuthenticationFailureHandler;
-import com.charon.basicserver.config.auth.MyAuthenticationSuccessHandler;
+import com.charon.basicserver.config.auth.*;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
@@ -74,7 +71,10 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                     .sessionManagement() //会话管理
                     .sessionCreationPolicy(SessionCreationPolicy.IF_REQUIRED)
                     .invalidSessionUrl("/login.html")
-                    .sessionFixation().migrateSession();
+                    .sessionFixation().migrateSession()
+                    .maximumSessions(1) //会话限制
+                    .maxSessionsPreventsLogin(false)
+                    .expiredSessionStrategy(new MyExpiredSessionStrategy());
 
     }
 
