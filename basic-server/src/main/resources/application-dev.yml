@@ -3,10 +3,8 @@ server:
 
 
 spring:
-  #security:
-    #user:
-      #name: charon
-      #password: charon
+  security:
+    logintype: JSON
   jackson:
     date-format: yyyy-MM-dd HH:mm:ss
     time-zone: GMT+8

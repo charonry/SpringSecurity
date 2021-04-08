@@ -1,5 +1,9 @@
 package com.charon.basicserver.config;
 
+import com.charon.basicserver.config.auth.MyAccessDeniedHandler;
+import com.charon.basicserver.config.auth.MyAuthenticationEntryPoint;
+import com.charon.basicserver.config.auth.MyAuthenticationFailureHandler;
+import com.charon.basicserver.config.auth.MyAuthenticationSuccessHandler;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
@@ -9,6 +13,8 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
+import javax.annotation.Resource;
+
 /**
  * @program: SpringSecurity
  * @description
@@ -17,6 +23,18 @@ import org.springframework.security.crypto.password.PasswordEncoder;
  **/
 @Configuration
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
+    @Resource
+    private MyAuthenticationSuccessHandler myAuthenticationSuccessHandler;
+
+    @Resource
+    private MyAuthenticationFailureHandler myAuthenticationFailureHandler;
+
+    @Resource
+    private MyAuthenticationEntryPoint myAuthenticationEntryPoint;
+
+    @Resource
+    private MyAccessDeniedHandler myAccessDeniedHandler;
+
 
     /**
      * 用于安全认证以及授权规则配置
@@ -32,7 +50,14 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                     .loginProcessingUrl("/login")//登录表单form中action的地址，也就是处理认证请求的路径
                      .usernameParameter("username")//登录表单form中用户名输入框input的name名，不修改的话默认是username
                     .passwordParameter("password")//form中密码输入框input的name名，不修改的话默认是password
-                     .defaultSuccessUrl("/")//登录认证成功后默认转跳的路径
+                     //.defaultSuccessUrl("/")//登录认证成功后默认转跳的路径
+                    //.failureUrl("/login.html")
+                    .successHandler(myAuthenticationSuccessHandler)
+                    .failureHandler(myAuthenticationFailureHandler)
+               .and()
+                    .exceptionHandling()
+                    .accessDeniedHandler(myAccessDeniedHandler)
+                    .authenticationEntryPoint(myAuthenticationEntryPoint)
                .and()
                .authorizeRequests()
                     .antMatchers("/login.html").permitAll()//不需要通过登录验证就可以被访问的资源路径
@@ -45,6 +70,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                .anyRequest()
                .authenticated();
     }
+
+
 
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
