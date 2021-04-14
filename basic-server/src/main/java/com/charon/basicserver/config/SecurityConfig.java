@@ -1,6 +1,7 @@
 package com.charon.basicserver.config;
 
 import com.charon.basicserver.config.auth.*;
+import com.charon.basicserver.service.MyUserDetailsService;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
@@ -33,6 +34,9 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Resource
     private MyAccessDeniedHandler myAccessDeniedHandler;
 
+    @Resource
+    MyUserDetailsService myUserDetailsService;
+
 
     /**
      * 用于安全认证以及授权规则配置
@@ -63,8 +67,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                         .hasAnyAuthority("ROLE_user","ROLE_admin")  //user角色和admin角色都可以访问
                     .antMatchers("/syslog","/sysuser")  //资源路径匹配
                         .hasAnyRole("admin")  //admin角色可以访问
-               //.antMatchers("/syslog").hasAuthority("sys:log")
-               //.antMatchers("/sysuser").hasAuthority("sys:user")
+               //.antMatchers("/syslog").hasAuthority("syslog")
+               //.antMatchers("/sysuser").hasAuthority("syslog")
                     .anyRequest()
                     .authenticated()
                .and()
@@ -82,17 +86,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
-        auth.inMemoryAuthentication()
-                    .withUser("user")
-                    .password(passwordEncoder().encode("123456"))
-                    .roles("user")
-                .and()
-                    .withUser("admin")
-                    .password(passwordEncoder().encode("123456"))
-                    //.authorities("sys:log","sys:user")
-                    .roles("admin")
-                .and()
-                .passwordEncoder(passwordEncoder());//配置BCrypt加密
+        auth.userDetailsService(myUserDetailsService)
+                .passwordEncoder(passwordEncoder());
     }
 
     @Bean

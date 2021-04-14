@@ -5,7 +5,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-//@MapperScan(basePackages = {"com.charon.basicserver.generator"})
+@MapperScan(basePackages = {"com.charon.basicserver"})
 public class BasicServerApplication {
 
     public static void main(String[] args) {
