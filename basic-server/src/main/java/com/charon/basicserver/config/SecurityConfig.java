@@ -48,11 +48,15 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
      */
     @Override
     protected void configure(HttpSecurity http) throws Exception {
-       http.csrf().disable()//禁用跨站csrf攻击防御
+       http.rememberMe()
+                    .rememberMeParameter("remember-me-name")
+                    .rememberMeCookieName("remember-me-cookie")
+                    .tokenValiditySeconds(60*60*24)
+               .and().csrf().disable()//禁用跨站csrf攻击防御
                .formLogin()
                     .loginPage("/login.html")//一旦用户的请求没有权限就跳转到这个页面\
                     .loginProcessingUrl("/login")//登录表单form中action的地址，也就是处理认证请求的路径
-                     .usernameParameter("username")//登录表单form中用户名输入框input的name名，不修改的话默认是username
+                    .usernameParameter("username")//登录表单form中用户名输入框input的name名，不修改的话默认是username
                     .passwordParameter("password")//form中密码输入框input的name名，不修改的话默认是password
                      //.defaultSuccessUrl("/")//登录认证成功后默认转跳的路径
                     //.failureUrl("/login.html")

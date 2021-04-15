@@ -37,13 +37,13 @@ public class BizpageController {
     // 具体业务一
     @GetMapping("/biz1")
     public String updateOrder() {
-        methodELService.findAll();
+       /* methodELService.findAll();
         methodELService.findOne();
         List<Integer> ids = new ArrayList<>();
         ids.add(1);
         ids.add(2);
         methodELService.delete(ids,null);
-        List<PersonDemo> pds = methodELService.findAllPD();
+        List<PersonDemo> pds = methodELService.findAllPD();*/
         return "biz1";
     }
 
