@@ -5,6 +5,7 @@ import com.charon.basicserver.service.MyUserDetailsService;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
+import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.builders.WebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
@@ -21,6 +22,7 @@ import javax.annotation.Resource;
  * @create: 2021-04-07 21:11
  **/
 @Configuration
+@EnableGlobalMethodSecurity(prePostEnabled = true)
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Resource
     private MyAuthenticationSuccessHandler myAuthenticationSuccessHandler;
@@ -63,6 +65,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                .and()
                .authorizeRequests()
                     .antMatchers("/login.html").permitAll()//不需要通过登录验证就可以被访问的资源路径
+                    .antMatchers("/person/{id}").access("@rbacService.checkUserId(authentication,#id)")
                     .anyRequest().access("@rbacService.hasPermission(request,authentication)")
                .and()
                     .sessionManagement() //会话管理

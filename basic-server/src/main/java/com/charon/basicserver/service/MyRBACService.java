@@ -33,4 +33,9 @@ public class MyRBACService {
         }
         return  false;
     }
+
+    public boolean checkUserId(Authentication authentication, int id) {
+        //验证逻辑代码
+        return true;
+    }
 }
