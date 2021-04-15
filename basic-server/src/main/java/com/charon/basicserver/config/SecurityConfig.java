@@ -12,8 +12,11 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.security.web.authentication.rememberme.JdbcTokenRepositoryImpl;
+import org.springframework.security.web.authentication.rememberme.PersistentTokenRepository;
 
 import javax.annotation.Resource;
+import javax.sql.DataSource;
 
 /**
  * @program: SpringSecurity
@@ -39,6 +42,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Resource
     MyUserDetailsService myUserDetailsService;
 
+    @Resource
+    DataSource dataSource;
 
     /**
      * 用于安全认证以及授权规则配置
@@ -52,6 +57,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                     .rememberMeParameter("remember-me-name")
                     .rememberMeCookieName("remember-me-cookie")
                     .tokenValiditySeconds(60*60*24)
+                    .tokenRepository(persistentTokenRepository())
                .and().csrf().disable()//禁用跨站csrf攻击防御
                .formLogin()
                     .loginPage("/login.html")//一旦用户的请求没有权限就跳转到这个页面\
@@ -104,6 +110,14 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     public void configure(WebSecurity web) {
         //将项目中静态资源路径开放出来
         web.ignoring().antMatchers( "/css/**", "/fonts/**", "/img/**", "/js/**");
+    }
+
+
+    @Bean
+    public PersistentTokenRepository persistentTokenRepository(){
+        JdbcTokenRepositoryImpl tokenRepository = new JdbcTokenRepositoryImpl();
+        tokenRepository.setDataSource(dataSource);
+        return tokenRepository;
     }
 
 
