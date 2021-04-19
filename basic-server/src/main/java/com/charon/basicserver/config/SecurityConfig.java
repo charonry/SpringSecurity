@@ -1,6 +1,7 @@
 package com.charon.basicserver.config;
 
 import com.charon.basicserver.config.auth.*;
+import com.charon.basicserver.filter.CaptchaCodeFilter;
 import com.charon.basicserver.service.MyUserDetailsService;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -12,6 +13,7 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 import org.springframework.security.web.authentication.rememberme.JdbcTokenRepositoryImpl;
 import org.springframework.security.web.authentication.rememberme.PersistentTokenRepository;
 
@@ -48,6 +50,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Resource
     MyLogoutSuccessHandler myLogoutSuccessHandler;
 
+    @Resource
+    private CaptchaCodeFilter captchaCodeFilter;
     /**
      * 用于安全认证以及授权规则配置
      * Controller服务资源要经过一系列的过滤器的验证，我们配置的是验证的放行规则
@@ -56,7 +60,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
      */
     @Override
     protected void configure(HttpSecurity http) throws Exception {
-       http.logout().logoutUrl("/signout")
+       http.addFilterBefore(captchaCodeFilter, UsernamePasswordAuthenticationFilter.class)
+                    .logout().logoutUrl("/signout")
                     //.logoutSuccessUrl("/aftersignout.html")
                     .logoutSuccessHandler(myLogoutSuccessHandler)
                     .deleteCookies("JSESSIONID")// 支持多配制删除多个cookie
@@ -81,7 +86,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                     .authenticationEntryPoint(myAuthenticationEntryPoint)
                .and()
                .authorizeRequests()
-                    .antMatchers("/login.html","/login","/aftersignout.html").permitAll()//不需要通过登录验证就可以被访问的资源路径
+                    .antMatchers("/login.html","/login","/aftersignout.html","/kaptcha").permitAll()//不需要通过登录验证就可以被访问的资源路径
                     .antMatchers("/person/{id}").access("@rbacService.checkUserId(authentication,#id)")
                     .anyRequest().access("@rbacService.hasPermission(request,authentication)")
                .and()
