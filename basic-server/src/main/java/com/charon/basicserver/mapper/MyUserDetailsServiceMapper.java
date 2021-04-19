@@ -3,6 +3,7 @@ package com.charon.basicserver.mapper;
 import com.charon.basicserver.model.MyUserDetails;
 import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
+import org.apache.ibatis.annotations.Update;
 
 import java.util.List;
 
@@ -15,7 +16,7 @@ import java.util.List;
 public interface MyUserDetailsServiceMapper {
 
     //根据userID查询用户信息
-    @Select("SELECT username,password,enabled\n" +
+    @Select("SELECT username,password,enabled,accountNonLocked\n" +
             "FROM sys_user u\n" +
             "WHERE u.username = #{userName}")
     MyUserDetails findByUserName(@Param("userName") String userName);
@@ -43,4 +44,10 @@ public interface MyUserDetailsServiceMapper {
             "</script>"
     })
     List<String> findAuthorityByRoleCodes(@Param("roleCodes") List<String> roleCodes);
+
+    //用户登录失败锁定账号
+    @Update({"UPDATE sys_user u \n" +
+            " SET u.accountNonLocked = 0 \n" +
+            " WHERE u.username = #{userId}" })
+    int updateLockedByUserId(@Param("userId")  String userId);
 }

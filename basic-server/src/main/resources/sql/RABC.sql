@@ -123,6 +123,7 @@ CREATE TABLE `sys_user` (
   `enabled` int(11) DEFAULT NULL COMMENT '0无效用户，1是有效用户',
   `phone` varchar(16) DEFAULT NULL COMMENT '手机号',
   `email` varchar(32) DEFAULT NULL COMMENT 'email',
+  `accountNonLocked` int(1) NOT NULL COMMENT '0锁定，1是为被锁',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COMMENT='用户信息表';
 
