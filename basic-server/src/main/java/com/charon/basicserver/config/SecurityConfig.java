@@ -45,6 +45,9 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Resource
     DataSource dataSource;
 
+    @Resource
+    MyLogoutSuccessHandler myLogoutSuccessHandler;
+
     /**
      * 用于安全认证以及授权规则配置
      * Controller服务资源要经过一系列的过滤器的验证，我们配置的是验证的放行规则
@@ -53,7 +56,11 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
      */
     @Override
     protected void configure(HttpSecurity http) throws Exception {
-       http.rememberMe()
+       http.logout().logoutUrl("/signout")
+                    //.logoutSuccessUrl("/aftersignout.html")
+                    .logoutSuccessHandler(myLogoutSuccessHandler)
+                    .deleteCookies("JSESSIONID")// 支持多配制删除多个cookie
+               .and().rememberMe()
                     .rememberMeParameter("remember-me-name")
                     .rememberMeCookieName("remember-me-cookie")
                     .tokenValiditySeconds(60*60*24)
@@ -74,7 +81,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                     .authenticationEntryPoint(myAuthenticationEntryPoint)
                .and()
                .authorizeRequests()
-                    .antMatchers("/login.html").permitAll()//不需要通过登录验证就可以被访问的资源路径
+                    .antMatchers("/login.html","/login","/aftersignout.html").permitAll()//不需要通过登录验证就可以被访问的资源路径
                     .antMatchers("/person/{id}").access("@rbacService.checkUserId(authentication,#id)")
                     .anyRequest().access("@rbacService.hasPermission(request,authentication)")
                .and()
