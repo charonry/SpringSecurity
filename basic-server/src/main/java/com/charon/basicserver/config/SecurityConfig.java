@@ -52,6 +52,9 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Resource
     private CaptchaCodeFilter captchaCodeFilter;
+
+    @Resource
+    SmsCodeSecurityConfig smsCodeSecurityConfig;
     /**
      * 用于安全认证以及授权规则配置
      * Controller服务资源要经过一系列的过滤器的验证，我们配置的是验证的放行规则
@@ -84,9 +87,11 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                     .exceptionHandling()
                     .accessDeniedHandler(myAccessDeniedHandler)
                     .authenticationEntryPoint(myAuthenticationEntryPoint)
+               .and().apply(smsCodeSecurityConfig)
                .and()
                .authorizeRequests()
-                    .antMatchers("/login.html","/login","/aftersignout.html","/kaptcha").permitAll()//不需要通过登录验证就可以被访问的资源路径
+                    .antMatchers("/login.html","/login","/aftersignout.html",
+                            "/kaptcha","/smscode","/smslogin").permitAll()//不需要通过登录验证就可以被访问的资源路径
                     .antMatchers("/person/{id}").access("@rbacService.checkUserId(authentication,#id)")
                     .anyRequest().access("@rbacService.hasPermission(request,authentication)")
                .and()

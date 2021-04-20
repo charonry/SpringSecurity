@@ -31,7 +31,7 @@ public class MyAuthenticationSuccessHandler extends SavedRequestAwareAuthenticat
     public void onAuthenticationSuccess(HttpServletRequest request, HttpServletResponse response, Authentication authentication) throws ServletException, IOException {
         if("JSON".equalsIgnoreCase(loginType)){
             response.setContentType("application/json;charset=UTF-8");
-            response.getWriter().write(objectMapper.writeValueAsString(AjaxResponse.success()));
+            response.getWriter().write(objectMapper.writeValueAsString(AjaxResponse.success("/index")));
         }else {
             // 会帮我们跳转到上一次请求的页面上
             super.onAuthenticationSuccess(request, response, authentication);

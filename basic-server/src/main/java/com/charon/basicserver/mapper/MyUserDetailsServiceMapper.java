@@ -18,7 +18,7 @@ public interface MyUserDetailsServiceMapper {
     //根据userID查询用户信息
     @Select("SELECT username,password,enabled,accountNonLocked\n" +
             "FROM sys_user u\n" +
-            "WHERE u.username = #{userName}")
+            "WHERE u.username = #{userName} or u.phone = #{userName}")
     MyUserDetails findByUserName(@Param("userName") String userName);
 
     //根据userID查询用户角色列表
@@ -26,7 +26,7 @@ public interface MyUserDetailsServiceMapper {
             "FROM sys_role r\n" +
             "LEFT JOIN sys_user_role ur ON r.id = ur.role_id\n" +
             "LEFT JOIN sys_user u ON u.id = ur.user_id\n" +
-            "WHERE u.username = #{userName}")
+            "WHERE u.username = #{userName}  or u.phone = #{userName}")
     List<String> findRoleByUserName(@Param("userName") String userName);
 
 
