@@ -62,11 +62,11 @@ public class MyAuthenticationFailureHandler extends SimpleUrlAuthenticationFailu
             errorMsg = "请检查您的用户名和密码输入是否正确";
         }
         //每次登陆失败计数器加1，并判断该用户是否已经到了触发了锁定规则
-        boolean reachLimit  = limiter.overLimitWhenIncremented(username);
+       /* boolean reachLimit  = limiter.overLimitWhenIncremented(username);
         if(reachLimit){
             myUserDetailsServiceMapper.updateLockedByUserId(username);
             errorMsg = "您多次登陆失败，账户已被锁定，请稍后再试！";
-        }
+        }*/
 
         if("JSON".equalsIgnoreCase(loginType)){
             response.setContentType("application/json;charset=UTF-8");
