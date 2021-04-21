@@ -91,7 +91,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                .and()
                .authorizeRequests()
                     .antMatchers("/login.html","/login","/aftersignout.html",
-                            "/kaptcha","/smscode","/smslogin").permitAll()//不需要通过登录验证就可以被访问的资源路径
+                            "/kaptcha","/smscode","/smslogin","/uid").permitAll()//不需要通过登录验证就可以被访问的资源路径
                     .antMatchers("/person/{id}").access("@rbacService.checkUserId(authentication,#id)")
                     .anyRequest().access("@rbacService.hasPermission(request,authentication)")
                .and()
