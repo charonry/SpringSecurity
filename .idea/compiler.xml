@@ -6,8 +6,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="huawei" />
         <module name="basic-server" />
+        <module name="jwt-server" />
+        <module name="huawei" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -18,6 +19,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="huawei" options="-parameters" />
       <module name="huaweicloud" options="-parameters" />
+      <module name="jwt-server" options="" />
     </option>
   </component>
 </project>

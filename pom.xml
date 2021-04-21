@@ -9,6 +9,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>basic-server</module>
+        <module>jwt-server</module>
     </modules>
     <packaging>pom</packaging>
     <name>boot-security</name>
