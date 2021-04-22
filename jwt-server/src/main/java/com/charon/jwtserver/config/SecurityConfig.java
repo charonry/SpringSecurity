@@ -4,6 +4,8 @@ import com.charon.jwtserver.service.MyUserDetailsService;
 import com.charon.jwtserver.config.auth.MyLogoutSuccessHandler;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.config.BeanIds;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
@@ -52,7 +54,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .tokenRepository(persistentTokenRepository())
                 .and().csrf().disable()
                 .authorizeRequests()
-                .antMatchers("/login","/hello").permitAll()
+                .antMatchers("/login","/hello","/authentication","/refreshtoken").permitAll()
                 .antMatchers("/index").authenticated()
                 .anyRequest().access("@rbacService.hasPermission(request,authentication)")
                 .and().sessionManagement()
@@ -92,4 +94,9 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         return tokenRepository;
     }
 
+    @Bean(name = BeanIds.AUTHENTICATION_MANAGER)
+    @Override
+    public AuthenticationManager authenticationManagerBean() throws Exception {
+        return super.authenticationManagerBean();
+    }
 }

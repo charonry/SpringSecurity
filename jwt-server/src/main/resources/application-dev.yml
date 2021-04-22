@@ -32,3 +32,8 @@ logging:
 mybatis:
     configuration:
       mapUnderscoreToCamelCase: true
+
+jwt:
+  header: JWTHeaderName
+  secret: charon
+  expiration: 3600000
