@@ -29,6 +29,22 @@
 <script type="text/javascript">
 
     window.onload = function () {
+
+        var headers = {};
+        headers['JWTHeaderName'] = "eyJhbGciOiJIUzUxMiJ9.eyJleHAiOjE2MTkxODczOTIsInN1YiI6ImFkbWluIiwiY3JlYXRlZCI6MTYxOT" +
+            "E4Mzc5MjgxMn0.u50vHp8qVh-SkTzw_IYDBAU183zjYtFkksdzehebYeI5jqkk7X2jB2XAf-yJuZROTfR_HXbqbJ5RrOd8LZxomA";
+        $.ajax({
+            url: 'http://localhost:8889/hello',
+            type: "POST",
+            headers: headers,
+            success: function (data) {
+                alert("跨域请求配置成功")
+            },
+            error: function (data) {
+                alert("跨域请求配置失败")
+            }
+        });
+
         var kaptchaImg = document.getElementById("kaptcha");
 
         kaptchaImg.onclick = function () {

@@ -1,5 +1,5 @@
 server:
-  port: 8888
+  port: 8889
   servlet:
     session:
       timeout: 1m #在Spring Boot中Session超时最短的时间是一分钟，当你的设置小于一分钟的时候，默认为一分钟。
