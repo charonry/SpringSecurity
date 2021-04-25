@@ -10,6 +10,7 @@
     <modules>
         <module>basic-server</module>
         <module>jwt-server</module>
+        <module>oath2-as</module>
     </modules>
     <packaging>pom</packaging>
     <name>boot-security</name>

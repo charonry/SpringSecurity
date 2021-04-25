@@ -8,6 +8,7 @@
         <option value="$PROJECT_DIR$/huaweicloud/pom.xml" />
         <option value="$PROJECT_DIR$/huawei/pom.xml" />
         <option value="$PROJECT_DIR$/jwt-server/pom.xml" />
+        <option value="$PROJECT_DIR$/oath2-as/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

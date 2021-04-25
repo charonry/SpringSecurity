@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="basic-server" />
         <module name="jwt-server" />
+        <module name="oath2-as" />
         <module name="huawei" />
       </profile>
     </annotationProcessing>
@@ -20,6 +21,7 @@
       <module name="huawei" options="-parameters" />
       <module name="huaweicloud" options="-parameters" />
       <module name="jwt-server" options="" />
+      <module name="oath2-as" options="" />
     </option>
   </component>
 </project>

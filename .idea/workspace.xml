@@ -1,0 +1,1578 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="379c9ea5-4779-4c38-85c5-9e7866040c50" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-server/target/classes/application-dev.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-server/target/classes/application-prod.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-server/target/classes/application-test.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-server/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-server/target/classes/com/charon/basicserver/BasicServerApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-server/target/classes/com/charon/basicserver/config/CaptchaConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-server/target/classes/com/charon/basicserver/config/SecurityConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-server/target/classes/com/charon/basicserver/config/SmsCodeSecurityConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-server/target/classes/com/charon/basicserver/config/accesslog/AccessLog.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-server/target/classes/com/charon/basicserver/config/accesslog/AccessLogInterceptor.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-server/target/classes/com/charon/basicserver/config/accesslog/AdrressIpUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-server/target/classes/com/charon/basicserver/config/auth/MyAccessDeniedHandler.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-server/target/classes/com/charon/basicserver/config/auth/MyAuthenticationEntryPoint.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-server/target/classes/com/charon/basicserver/config/auth/MyAuthenticationFailureHandler.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-server/target/classes/com/charon/basicserver/config/auth/MyAuthenticationSuccessHandler.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-server/target/classes/com/charon/basicserver/config/auth/MyExpiredSessionStrategy.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-server/target/classes/com/charon/basicserver/config/auth/MyLogoutSuccessHandler.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-server/target/classes/com/charon/basicserver/config/exception/AjaxResponse.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-server/target/classes/com/charon/basicserver/config/exception/CustomException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-server/target/classes/com/charon/basicserver/config/exception/CustomExceptionType.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-server/target/classes/com/charon/basicserver/config/exception/ModelView.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-server/target/classes/com/charon/basicserver/config/exception/ModelViewAspect.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-server/target/classes/com/charon/basicserver/config/exception/ModelViewException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-server/target/classes/com/charon/basicserver/config/exception/WebExceptionHandler.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-server/target/classes/com/charon/basicserver/controller/BizpageController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-server/target/classes/com/charon/basicserver/controller/CaptchaController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-server/target/classes/com/charon/basicserver/controller/SessionController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-server/target/classes/com/charon/basicserver/controller/SmsController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-server/target/classes/com/charon/basicserver/filter/CaptchaCodeFilter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-server/target/classes/com/charon/basicserver/filter/SmsCodeAuthenticationFilter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-server/target/classes/com/charon/basicserver/filter/SmsCodeAuthenticationProvider.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-server/target/classes/com/charon/basicserver/filter/SmsCodeAuthenticationToken.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-server/target/classes/com/charon/basicserver/filter/SmsCodeValidateFilter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-server/target/classes/com/charon/basicserver/mapper/MyRBACServiceMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-server/target/classes/com/charon/basicserver/mapper/MyUserDetailsServiceMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-server/target/classes/com/charon/basicserver/model/CaptchaImageVO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-server/target/classes/com/charon/basicserver/model/MyUserDetails.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-server/target/classes/com/charon/basicserver/model/PersonDemo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-server/target/classes/com/charon/basicserver/model/SmsCode.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-server/target/classes/com/charon/basicserver/service/MethodELService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-server/target/classes/com/charon/basicserver/service/MyRBACService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-server/target/classes/com/charon/basicserver/service/MyUserDetailsService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-server/target/classes/com/charon/basicserver/utils/MyContants.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-server/target/classes/kaptcha.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-server/target/classes/log4j2-dev.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-server/target/classes/log4j2-prod.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-server/target/classes/log4j2-test.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-server/target/classes/public/aftersignout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-server/target/classes/public/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-server/target/classes/sql/RABC.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-server/target/classes/sql/rememberMe.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-server/target/classes/static/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-server/target/classes/static/image/1.3.httpbasic认证流程.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-server/target/classes/static/image/1.6.1登录认证基于过滤器链.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-server/target/classes/static/image/1.6.2.过滤器登录验证细节.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-server/target/classes/static/image/template.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-server/target/classes/templates/biz1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-server/target/classes/templates/biz2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-server/target/classes/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-server/target/classes/templates/syslog.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-server/target/classes/templates/sysuser.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-server/target/test-classes/com/charon/basicserver/PasswordEncoderTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jwt-server/target/classes/META-INF/jwt-server.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jwt-server/target/classes/application-dev.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jwt-server/target/classes/application-prod.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jwt-server/target/classes/application-test.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jwt-server/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jwt-server/target/classes/com/charon/jwtserver/JwtApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jwt-server/target/classes/com/charon/jwtserver/config/SecurityConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jwt-server/target/classes/com/charon/jwtserver/config/accesslog/AccessLog.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jwt-server/target/classes/com/charon/jwtserver/config/accesslog/AccessLogInterceptor.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jwt-server/target/classes/com/charon/jwtserver/config/accesslog/AdrressIpUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jwt-server/target/classes/com/charon/jwtserver/config/auth/MyLogoutSuccessHandler.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jwt-server/target/classes/com/charon/jwtserver/config/exception/AjaxResponse.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jwt-server/target/classes/com/charon/jwtserver/config/exception/CustomException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jwt-server/target/classes/com/charon/jwtserver/config/exception/CustomExceptionType.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jwt-server/target/classes/com/charon/jwtserver/config/exception/ModelView.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jwt-server/target/classes/com/charon/jwtserver/config/exception/ModelViewAspect.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jwt-server/target/classes/com/charon/jwtserver/config/exception/ModelViewException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jwt-server/target/classes/com/charon/jwtserver/config/exception/WebExceptionHandler.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jwt-server/target/classes/com/charon/jwtserver/controller/HelloController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jwt-server/target/classes/com/charon/jwtserver/controller/JwtAuthController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jwt-server/target/classes/com/charon/jwtserver/filter/JwtAuthenticationTokenFilter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jwt-server/target/classes/com/charon/jwtserver/mapper/MyRBACServiceMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jwt-server/target/classes/com/charon/jwtserver/mapper/MyUserDetailsServiceMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jwt-server/target/classes/com/charon/jwtserver/model/MyUserDetails.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jwt-server/target/classes/com/charon/jwtserver/service/JwtAuthService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jwt-server/target/classes/com/charon/jwtserver/service/MyRBACService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jwt-server/target/classes/com/charon/jwtserver/service/MyUserDetailsService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jwt-server/target/classes/com/charon/jwtserver/util/JwtTokenUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jwt-server/target/classes/kaptcha.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jwt-server/target/classes/log4j2-dev.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jwt-server/target/classes/log4j2-prod.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jwt-server/target/classes/log4j2-test.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jwt-server/target/test-classes/com/security/jwt/JwtApplicationTests.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oath2-as/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oath2-as/src/main/java/com/charon/oath2as/Oath2asApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oath2-as/src/main/java/com/charon/oath2as/config/OAuth2AuthorizationServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oath2-as/src/main/java/com/charon/oath2as/config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oath2-as/src/main/java/com/charon/oath2as/mapper/MyUserDetailsServiceMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oath2-as/src/main/java/com/charon/oath2as/model/MyUserDetails.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oath2-as/src/main/java/com/charon/oath2as/service/MyRBACService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oath2-as/src/main/java/com/charon/oath2as/service/MyUserDetailsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oath2-as/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oath2-as/src/test/java/com/charon/oath2as/Oath2asApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/basic-server/target/" />
+    <ignored path="$PROJECT_DIR$/huaweicloud/target/" />
+    <ignored path="$PROJECT_DIR$/huawei/target/" />
+    <ignored path="$PROJECT_DIR$/jwt-server/target/" />
+    <ignored path="$PROJECT_DIR$/oath2-as/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/oath2-as/src/main/java/com/charon/oath2as/config/SecurityConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="104">
+              <caret line="29" column="7" lean-forward="true" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#707#708#0" expanded="true" />
+                <element signature="e#757#758#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/oath2-as/src/main/java/com/charon/oath2as/config/OAuth2AuthorizationServer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="229">
+              <caret line="38" column="52" selection-start-line="38" selection-start-column="46" selection-end-line="38" selection-end-column="52" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="FxmlFile" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>z</find>
+      <find>boot-lau</find>
+      <find>secu</find>
+      <find>contains</find>
+      <find>notNull</find>
+      <find>setAllowedHostnames</find>
+      <find>loginType</find>
+      <find>com.b</find>
+      <find>mybatis</find>
+      <find>PreFilter</find>
+      <find>isAccountNonLocked</find>
+      <find>RequestRateLimiter</find>
+      <find>com</find>
+      <find>equalsIgnoreCase</find>
+      <find>captchaCode</find>
+      <find>getDetails</find>
+      <find>setAuthenticationSuccessHandler</find>
+      <find>rbacService</find>
+      <find>generateToken</find>
+      <find>getClaimsFromToken</find>
+      <find>reports-plugin</find>
+      <find>junit</find>
+      <find>test</find>
+      <find>redis</find>
+      <find>mybatis-spring-boot-starte</find>
+      <find>ClientDetailsServiceConfigurer</find>
+    </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="8975bd09fb5ba7ae451df5a13282fd60ca088a85" />
+      </map>
+    </option>
+  </component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="6462d18c-aa7b-4332-bb9a-619f6397ea6c" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/basic-server/src/main/java/com/charon/basicserver/model/CaptchaImageVO.java" />
+        <option value="$PROJECT_DIR$/basic-server/src/main/java/com/charon/basicserver/filter/CaptchaCodeFilter.java" />
+        <option value="$PROJECT_DIR$/basic-server/src/main/java/com/charon/basicserver/model/SmsCode.java" />
+        <option value="$PROJECT_DIR$/basic-server/src/main/java/com/charon/basicserver/mapper/MyRBACServiceMapper.java" />
+        <option value="$PROJECT_DIR$/basic-server/src/main/java/com/charon/basicserver/mapper/MyUserDetailsServiceMapper.java" />
+        <option value="$PROJECT_DIR$/basic-server/src/main/java/com/charon/basicserver/utils/MyContants.java" />
+        <option value="$PROJECT_DIR$/basic-server/src/main/java/com/charon/basicserver/controller/SmsController.java" />
+        <option value="$PROJECT_DIR$/basic-server/src/main/java/com/charon/basicserver/filter/SmsCodeAuthenticationToken.java" />
+        <option value="$PROJECT_DIR$/basic-server/src/main/java/com/charon/basicserver/filter/SmsCodeAuthenticationProvider.java" />
+        <option value="$PROJECT_DIR$/basic-server/src/main/java/com/charon/basicserver/filter/SmsCodeAuthenticationFilter.java" />
+        <option value="$PROJECT_DIR$/basic-server/src/main/java/com/charon/basicserver/config/SmsCodeSecurityConfig.java" />
+        <option value="$PROJECT_DIR$/basic-server/src/main/java/com/charon/basicserver/filter/SmsCodeValidateFilter.java" />
+        <option value="$PROJECT_DIR$/basic-server/src/main/java/com/charon/basicserver/config/auth/MyAuthenticationSuccessHandler.java" />
+        <option value="$PROJECT_DIR$/basic-server/src/main/java/com/charon/basicserver/config/auth/MyAuthenticationFailureHandler.java" />
+        <option value="$PROJECT_DIR$/basic-server/src/main/java/com/charon/basicserver/controller/SessionController.java" />
+        <option value="$PROJECT_DIR$/basic-server/src/main/java/com/charon/basicserver/config/SecurityConfig.java" />
+        <option value="$PROJECT_DIR$/basic-server/src/main/resources/application-dev.yml" />
+        <option value="$PROJECT_DIR$/basic-server/pom.xml" />
+        <option value="$PROJECT_DIR$/basic-server/src/main/java/com/charon/basicserver/BasicServerApplication.java" />
+        <option value="$PROJECT_DIR$/jwt-server/src/main/java/com/security/jwt/controller/BizpageController.java" />
+        <option value="$PROJECT_DIR$/jwt-server/src/main/java/com/security/jwt/controller/HelloController.java" />
+        <option value="$PROJECT_DIR$/jwt-server/src/main/java/com/security/jwt/config/SmsCodeSecurityConfig.java" />
+        <option value="$PROJECT_DIR$/jwt-server/src/main/java/com/security/jwt/service/MyUserDetailsService.java" />
+        <option value="$PROJECT_DIR$/jwt-server/src/main/java/com/security/jwt/mapper/MyUserDetailsServiceMapper.java" />
+        <option value="$PROJECT_DIR$/jwt-server/src/main/java/com/security/jwt/config/SecurityConfig.java" />
+        <option value="$PROJECT_DIR$/jwt-server/src/main/java/com/security/jwt/JwtApplication.java" />
+        <option value="$PROJECT_DIR$/jwt-server/src/main/java/com/security/jwt/service/MethodELService.java" />
+        <option value="$PROJECT_DIR$/jwt-server/src/main/resources/log4j2-dev.xml" />
+        <option value="$PROJECT_DIR$/jwt-server/src/test/java/com/security/jwt/JwtApplicationTests.java" />
+        <option value="$PROJECT_DIR$/jwt-server/src/main/java/com/charon/jwt/JwtApplication.java" />
+        <option value="$PROJECT_DIR$/jwt-server/src/main/java/com/charon/jwtserver/config/exception/ModelViewAspect.java" />
+        <option value="$PROJECT_DIR$/jwt-server/pom.xml" />
+        <option value="$PROJECT_DIR$/jwt-server/src/main/java/com/charon/jwtserver/util/JwtTokenUtil.java" />
+        <option value="$PROJECT_DIR$/jwt-server/src/main/java/com/charon/jwtserver/controller/JwtAuthController.java" />
+        <option value="$PROJECT_DIR$/jwt-server/src/main/java/com/charon/jwtserver/service/JwtAuthService.java" />
+        <option value="$PROJECT_DIR$/jwt-server/src/main/java/com/charon/jwtserver/filter/JwtAuthenticationTokenFilter.java" />
+        <option value="$PROJECT_DIR$/jwt-server/src/main/resources/application-dev.yml" />
+        <option value="$PROJECT_DIR$/basic-server/src/main/resources/public/login.html" />
+        <option value="$PROJECT_DIR$/jwt-server/src/main/java/com/charon/jwtserver/controller/HelloController.java" />
+        <option value="$PROJECT_DIR$/jwt-server/src/main/java/com/charon/jwtserver/config/SecurityConfig.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/oath2-as/src/test/java/com/charon/oath2as/Oath2asApplicationTests.java" />
+        <option value="$PROJECT_DIR$/oath2-as/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/oath2-as/pom.xml" />
+        <option value="$PROJECT_DIR$/oath2-as/src/main/java/com/charon/oath2as/model/MyUserDetails.java" />
+        <option value="$PROJECT_DIR$/oath2-as/src/main/java/com/charon/oath2as/service/MyRBACService.java" />
+        <option value="$PROJECT_DIR$/oath2-as/src/main/java/com/charon/oath2as/service/MyUserDetailsService.java" />
+        <option value="$PROJECT_DIR$/oath2-as/src/main/java/com/charon/oath2as/mapper/MyUserDetailsServiceMapper.java" />
+        <option value="$PROJECT_DIR$/oath2-as/src/main/java/com/charon/oath2as/Oath2asApplication.java" />
+        <option value="$PROJECT_DIR$/oath2-as/src/main/java/com/charon/oath2as/config/SecurityConfig.java" />
+        <option value="$PROJECT_DIR$/oath2-as/src/main/java/com/charon/oath2as/config/OAuth2AuthorizationServer.java" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="D:/apache-maven-3.5.4" />
+        <option name="userSettingsFile" value="D:\MyMaven\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-10" />
+    <option name="width" value="1380" />
+    <option name="height" value="735" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="SpringSecurity" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringSecurity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringSecurity" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringSecurity" type="462c0819:PsiDirectoryNode" />
+              <item name="jwt-server" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringSecurity" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringSecurity" type="462c0819:PsiDirectoryNode" />
+              <item name="jwt-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringSecurity" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringSecurity" type="462c0819:PsiDirectoryNode" />
+              <item name="jwt-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringSecurity" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringSecurity" type="462c0819:PsiDirectoryNode" />
+              <item name="jwt-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringSecurity" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringSecurity" type="462c0819:PsiDirectoryNode" />
+              <item name="jwt-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringSecurity" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringSecurity" type="462c0819:PsiDirectoryNode" />
+              <item name="jwt-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="charon" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringSecurity" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringSecurity" type="462c0819:PsiDirectoryNode" />
+              <item name="jwt-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="charon" type="462c0819:PsiDirectoryNode" />
+              <item name="jwtserver" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringSecurity" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringSecurity" type="462c0819:PsiDirectoryNode" />
+              <item name="jwt-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="charon" type="462c0819:PsiDirectoryNode" />
+              <item name="jwtserver" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringSecurity" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringSecurity" type="462c0819:PsiDirectoryNode" />
+              <item name="jwt-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="charon" type="462c0819:PsiDirectoryNode" />
+              <item name="jwtserver" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringSecurity" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringSecurity" type="462c0819:PsiDirectoryNode" />
+              <item name="jwt-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="charon" type="462c0819:PsiDirectoryNode" />
+              <item name="jwtserver" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringSecurity" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringSecurity" type="462c0819:PsiDirectoryNode" />
+              <item name="jwt-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="charon" type="462c0819:PsiDirectoryNode" />
+              <item name="jwtserver" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringSecurity" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringSecurity" type="462c0819:PsiDirectoryNode" />
+              <item name="oath2-as" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringSecurity" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringSecurity" type="462c0819:PsiDirectoryNode" />
+              <item name="oath2-as" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringSecurity" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringSecurity" type="462c0819:PsiDirectoryNode" />
+              <item name="oath2-as" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringSecurity" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringSecurity" type="462c0819:PsiDirectoryNode" />
+              <item name="oath2-as" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringSecurity" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringSecurity" type="462c0819:PsiDirectoryNode" />
+              <item name="oath2-as" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringSecurity" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringSecurity" type="462c0819:PsiDirectoryNode" />
+              <item name="oath2-as" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="charon" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringSecurity" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringSecurity" type="462c0819:PsiDirectoryNode" />
+              <item name="oath2-as" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="charon" type="462c0819:PsiDirectoryNode" />
+              <item name="oath2as" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringSecurity" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringSecurity" type="462c0819:PsiDirectoryNode" />
+              <item name="oath2-as" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="charon" type="462c0819:PsiDirectoryNode" />
+              <item name="oath2as" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringSecurity" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringSecurity" type="462c0819:PsiDirectoryNode" />
+              <item name="oath2-as" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/oath2-as/src/main/resources" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Problems" />
+    <property name="project.structure.proportion" value="0.15163934" />
+    <property name="project.structure.side.proportion" value="0.33760187" />
+    <property name="settings.editor.selected.configurable" value="spring.boot" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.charon.oath2as.service" />
+      <recent name="com.charon.oath2as.mapper" />
+      <recent name="com.charon.oath2as.model" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\IDEA_worker\SpringSecurity\oath2-as\src\main\resources" />
+      <recent name="D:\IDEA_worker\SpringSecurity\jwt-server\src\main\java\com\security\jwt" />
+      <recent name="D:\IDEA_worker\SpringSecurity\jwt-server\src\main\java\com\security\jwt\controller" />
+      <recent name="D:\IDEA_worker\SpringSecurity\jwt-server\src\main\resources" />
+      <recent name="D:\IDEA_worker\SpringSecurity\basic-server\src\main\resources\public" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.Oath2asApplication">
+    <configuration name="PasswordEncoderTest.bCryptPasswordTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="basic-server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.charon.basicserver.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.charon.basicserver" />
+      <option name="MAIN_CLASS_NAME" value="com.charon.basicserver.PasswordEncoderTest" />
+      <option name="METHOD_NAME" value="bCryptPasswordTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PasswordencoderTest.context" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="huawei" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.huawei.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.huawei" />
+      <option name="MAIN_CLASS_NAME" value="com.example.huawei.PasswordencoderTest" />
+      <option name="METHOD_NAME" value="context" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BasicServerApplication _copy _88" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" singleton="false">
+      <module name="basic-server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.charon.basicserver.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.charon.basicserver.BasicServerApplication" />
+      <option name="VM_PARAMETERS" value="-Dserver.port=8888 -Dserver.httpPort=88 -Dspring.profiles.active=dev -Ddebug" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BasicServerApplication _copy_89" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" singleton="false">
+      <module name="basic-server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.charon.basicserver.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.charon.basicserver.BasicServerApplication" />
+      <option name="VM_PARAMETERS" value="-Dserver.port=8889 -Dserver.httpPort=89 -Dspring.profiles.active=dev -Ddebug" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BasicServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="basic-server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.charon.basicserver.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.charon.basicserver.BasicServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HuaweiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="huawei" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.huawei.HuaweiApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JwtApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="jwt-server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.charon.jwtserver.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.charon.jwtserver.JwtApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Oath2asApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="oath2-as" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.charon.oath2as.Oath2asApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.PasswordEncoderTest.bCryptPasswordTest" />
+      <item itemvalue="JUnit.PasswordencoderTest.context" />
+      <item itemvalue="Spring Boot.HuaweiApplication" />
+      <item itemvalue="Spring Boot.BasicServerApplication _copy_89" />
+      <item itemvalue="Spring Boot.BasicServerApplication _copy _88" />
+      <item itemvalue="Spring Boot.BasicServerApplication" />
+      <item itemvalue="Spring Boot.JwtApplication" />
+      <item itemvalue="Spring Boot.Oath2asApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.JwtApplication" />
+        <item itemvalue="Spring Boot.BasicServerApplication" />
+        <item itemvalue="JUnit.PasswordencoderTest.context" />
+        <item itemvalue="JUnit.PasswordEncoderTest.bCryptPasswordTest" />
+        <item itemvalue="Spring Boot.BasicServerApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="379c9ea5-4779-4c38-85c5-9e7866040c50" name="Default Changelist" comment="" />
+      <created>1617027078098</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1617027078098</updated>
+      <workItem from="1617027081139" duration="1974000" />
+      <workItem from="1617109790610" duration="7654000" />
+      <workItem from="1617194964373" duration="3684000" />
+      <workItem from="1617199037966" duration="441000" />
+      <workItem from="1617454515921" duration="664000" />
+      <workItem from="1617626461533" duration="626000" />
+      <workItem from="1617714395541" duration="2264000" />
+      <workItem from="1617795799137" duration="10468000" />
+      <workItem from="1617885568548" duration="7632000" />
+      <workItem from="1617973733199" duration="594000" />
+      <workItem from="1618315404562" duration="814000" />
+      <workItem from="1618401712560" duration="4051000" />
+      <workItem from="1618411239535" duration="3935000" />
+      <workItem from="1618490740245" duration="3401000" />
+      <workItem from="1618494184928" duration="1768000" />
+      <workItem from="1618495975990" duration="118000" />
+      <workItem from="1618496107072" duration="2373000" />
+      <workItem from="1618498511286" duration="70000" />
+      <workItem from="1618498589535" duration="669000" />
+      <workItem from="1618674349459" duration="181000" />
+      <workItem from="1618745038399" duration="84000" />
+      <workItem from="1618832140423" duration="2681000" />
+      <workItem from="1618836043002" duration="44000" />
+      <workItem from="1618836093774" duration="2409000" />
+      <workItem from="1618838534577" duration="62000" />
+      <workItem from="1618838609209" duration="6158000" />
+      <workItem from="1618846897791" duration="815000" />
+      <workItem from="1618918911028" duration="4491000" />
+      <workItem from="1618927405482" duration="5823000" />
+      <workItem from="1618933283047" duration="785000" />
+      <workItem from="1618934082175" duration="226000" />
+      <workItem from="1618934317128" duration="9000" />
+      <workItem from="1618934336239" duration="18000" />
+      <workItem from="1619005695375" duration="8392000" />
+      <workItem from="1619095308119" duration="6318000" />
+      <workItem from="1619183280864" duration="3031000" />
+      <workItem from="1619354851497" duration="2550000" />
+    </task>
+    <task id="LOCAL-00001" summary="简单的密码加密">
+      <created>1617198839963</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1617198839963</updated>
+    </task>
+    <task id="LOCAL-00002" summary="httpbasic认证流程">
+      <created>1617802477743</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1617802477743</updated>
+    </task>
+    <task id="LOCAL-00003" summary="BCryptPasswordEncoder密码加密">
+      <created>1617803336859</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1617803336859</updated>
+    </task>
+    <task id="LOCAL-00004" summary="formlogin认证登录">
+      <created>1617805897127</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1617805897127</updated>
+    </task>
+    <task id="LOCAL-00005" summary="基础数据准备和登录流程认证分析解析">
+      <created>1617808489886</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1617808489886</updated>
+    </task>
+    <task id="LOCAL-00006" summary="自定义登录验证结果处理">
+      <created>1617891024101</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1617891024101</updated>
+    </task>
+    <task id="LOCAL-00007" summary="session会话的管理">
+      <created>1617892822211</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1617892822211</updated>
+    </task>
+    <task id="LOCAL-00008" summary="同账号多端登录踢下线">
+      <created>1617894169856</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1617894169856</updated>
+    </task>
+    <task id="LOCAL-00009" summary="RBAC的数据库脚本">
+      <created>1618411335819</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1618411335820</updated>
+    </task>
+    <task id="LOCAL-00010" summary="动态加载用户角色权限数据">
+      <created>1618415192953</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1618415192953</updated>
+    </task>
+    <task id="LOCAL-00011" summary="动态加载资源鉴权规则">
+      <created>1618493809854</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1618493809854</updated>
+    </task>
+    <task id="LOCAL-00012" summary="权限表达式使用方法总结">
+      <created>1618495908438</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1618495908438</updated>
+    </task>
+    <task id="LOCAL-00013" summary="内存方式实现rememberMe">
+      <created>1618498277292</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1618498277292</updated>
+    </task>
+    <task id="LOCAL-00014" summary="数据库方式实现rememberMe">
+      <created>1618499253293</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1618499253293</updated>
+    </task>
+    <task id="LOCAL-00015" summary="退出登录功能的实现">
+      <created>1618835624742</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1618835624742</updated>
+    </task>
+    <task id="LOCAL-00016" summary="多次登录失败账户锁定">
+      <created>1618838426527</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1618838426527</updated>
+    </task>
+    <task id="LOCAL-00017" summary="基于session的图片验证码实现">
+      <created>1618846710149</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1618846710149</updated>
+    </task>
+    <task id="LOCAL-00018" summary="短信验证码登录功能">
+      <created>1618933157923</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1618933157923</updated>
+    </task>
+    <task id="LOCAL-00019" summary="短信验证码登录功能 与以前做的账户失败锁定冲突 注释锁定代码">
+      <created>1618933980883</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1618933980883</updated>
+    </task>
+    <task id="LOCAL-00020" summary="基于session共享登陆">
+      <created>1619007465470</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1619007465470</updated>
+    </task>
+    <task id="LOCAL-00021" summary="jwt前期准备环境">
+      <created>1619012361266</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1619012361266</updated>
+    </task>
+    <task id="LOCAL-00022" summary="jwt的认证">
+      <created>1619098066501</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1619098066501</updated>
+    </task>
+    <task id="LOCAL-00023" summary="jwt的鉴权">
+      <created>1619102971592</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1619102971592</updated>
+    </task>
+    <task id="LOCAL-00024" summary="spring security的跨域访问">
+      <created>1619184429963</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1619184429963</updated>
+    </task>
+    <task id="LOCAL-00025" summary="CSRF跨站攻击防护">
+      <created>1619185737383</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1619185737383</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="PasswordencoderTest_context - 2021.03.31 at 21h 26m 03s.xml">
+      <configuration name="PasswordencoderTest.context" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PasswordEncoderTest_bCryptPasswordTest - 2021.04.07 at 21h 44m 16s.xml">
+      <configuration name="PasswordEncoderTest.bCryptPasswordTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PasswordEncoderTest_bCryptPasswordTest - 2021.04.07 at 21h 44m 35s.xml">
+      <configuration name="PasswordEncoderTest.bCryptPasswordTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PasswordEncoderTest_bCryptPasswordTest - 2021.04.07 at 21h 45m 07s.xml">
+      <configuration name="PasswordEncoderTest.bCryptPasswordTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PasswordEncoderTest_bCryptPasswordTest - 2021.04.07 at 21h 45m 09s.xml">
+      <configuration name="PasswordEncoderTest.bCryptPasswordTest" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="97277000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6606061" visible="true" weight="0.24061662" />
+      <window_info id="Structure" order="1" sideWeight="0.33939394" side_tool="true" weight="0.33109918" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3286119" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.42776203" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3286119" />
+      <window_info anchor="bottom" id="Spring" order="7" weight="0.16572239" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3286119" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.3286119" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.6586402" />
+      <window_info anchor="bottom" id="Database Changes" order="13" />
+      <window_info anchor="bottom" id="Version Control" order="14" weight="0.18130311" />
+      <window_info anchor="bottom" id="MyBatis Log" order="15" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.021447722" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.02010724" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Bean Validation" order="9" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6606061" visible="true" weight="0.24061662" />
+      <window_info id="Structure" order="1" sideWeight="0.33939394" side_tool="true" weight="0.33109918" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3286119" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.42776203" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3286119" />
+      <window_info anchor="bottom" id="Spring" order="7" weight="0.16572239" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3286119" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.3286119" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.6586402" />
+      <window_info anchor="bottom" id="Database Changes" order="13" />
+      <window_info anchor="bottom" id="Version Control" order="14" weight="0.18130311" />
+      <window_info anchor="bottom" id="MyBatis Log" order="15" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.021447722" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.02010724" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Bean Validation" order="9" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="简单的密码加密" />
+    <MESSAGE value="httpbasic认证流程" />
+    <MESSAGE value="BCryptPasswordEncoder密码加密" />
+    <MESSAGE value="formlogin认证登录" />
+    <MESSAGE value="基础数据准备和登录流程认证分析解析" />
+    <MESSAGE value="自定义登录验证结果处理" />
+    <MESSAGE value="session会话的管理" />
+    <MESSAGE value="同账号多端登录踢下线" />
+    <MESSAGE value="RBAC的数据库脚本" />
+    <MESSAGE value="动态加载用户角色权限数据" />
+    <MESSAGE value="动态加载资源鉴权规则" />
+    <MESSAGE value="权限表达式使用方法总结" />
+    <MESSAGE value="内存方式实现rememberMe" />
+    <MESSAGE value="数据库方式实现rememberMe" />
+    <MESSAGE value="退出登录功能的实现" />
+    <MESSAGE value="多次登录失败账户锁定" />
+    <MESSAGE value="基于session的图片验证码实现" />
+    <MESSAGE value="短信验证码登录功能" />
+    <MESSAGE value="短信验证码登录功能 与以前做的账户失败锁定冲突 注释锁定代码" />
+    <MESSAGE value="基于session共享登陆" />
+    <MESSAGE value="jwt前期准备环境" />
+    <MESSAGE value="jwt的认证" />
+    <MESSAGE value="jwt的鉴权" />
+    <MESSAGE value="spring security的跨域访问" />
+    <MESSAGE value="CSRF跨站攻击防护" />
+    <option name="LAST_COMMIT_MESSAGE" value="CSRF跨站攻击防护" />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/jwt-server/src/main/resources/application-test.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jwt-server/src/main/resources/kaptcha.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basic-server/pom.xml">
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="18" column="82" lean-forward="true" selection-start-line="17" selection-start-column="8" selection-end-line="18" selection-end-column="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basic-server/src/test/java/com/charon/basicserver/PasswordEncoderTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-tx/5.0.8.RELEASE/spring-tx-5.0.8.RELEASE.jar!/org/springframework/transaction/annotation/ProxyTransactionManagementConfiguration.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jwt-server/src/main/resources/log4j2-dev.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1175">
+          <caret line="47" column="74" selection-start-line="47" selection-start-column="74" selection-end-line="47" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jwt-server/src/main/resources/log4j2-prod.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-718" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jwt-server/src/main/resources/log4j2-test.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jwt-server/src/main/java/com/charon/jwtserver/config/accesslog/AccessLog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="118">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jwt-server/src/main/java/com/charon/jwtserver/config/accesslog/AdrressIpUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jwt-server/src/main/java/com/charon/jwtserver/config/auth/MyLogoutSuccessHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jwt-server/src/main/java/com/charon/jwtserver/mapper/MyRBACServiceMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jwt-server/src/main/java/com/charon/jwtserver/mapper/MyUserDetailsServiceMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="22" column="9" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basic-server/src/main/java/com/charon/basicserver/BasicServerApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#363#364#0" expanded="true" />
+            <element signature="e#436#437#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jwt-server/src/main/java/com/charon/jwtserver/JwtApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="7" column="45" selection-start-line="7" selection-start-column="45" selection-end-line="7" selection-end-column="45" />
+          <folding>
+            <element signature="e#341#342#0" expanded="true" />
+            <element signature="e#406#407#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jwt-server/src/main/java/com/charon/jwtserver/config/exception/ModelView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jwt-server/src/main/java/com/charon/jwtserver/config/exception/ModelViewAspect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="12" column="48" selection-start-line="12" selection-start-column="48" selection-end-line="12" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/5.0.7.RELEASE/spring-security-core-5.0.7.RELEASE.jar!/org/springframework/security/core/userdetails/UserDetailsService.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-config/5.4.5/spring-security-config-5.4.5.jar!/org/springframework/security/config/annotation/authentication/configuration/AuthenticationConfiguration.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="260" column="30" selection-start-line="260" selection-start-column="30" selection-end-line="260" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/5.0.7.RELEASE/spring-security-core-5.0.7.RELEASE.jar!/org/springframework/security/authentication/AuthenticationManager.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jwt-server/src/main/java/com/charon/jwtserver/model/MyUserDetails.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jwt-server/src/main/java/com/charon/jwtserver/service/MyRBACService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jwt-server/src/main/resources/application-prod.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-71" />
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/5.0.7.RELEASE/spring-security-core-5.0.7.RELEASE.jar!/org/springframework/security/authentication/UsernamePasswordAuthenticationToken.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="22" column="11" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jwt-server/src/main/java/com/charon/jwtserver/service/MyUserDetailsService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-41">
+          <caret line="31" column="49" lean-forward="true" selection-start-line="31" selection-start-column="49" selection-end-line="31" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/5.0.7.RELEASE/spring-security-core-5.0.7.RELEASE.jar!/org/springframework/security/core/context/SecurityContext.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/5.0.7.RELEASE/spring-security-core-5.0.7.RELEASE.jar!/org/springframework/security/core/context/SecurityContextHolderStrategy.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="10" column="12" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/5.0.7.RELEASE/spring-security-core-5.0.7.RELEASE.jar!/org/springframework/security/core/context/SecurityContextHolder.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="27" column="34" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
+          <folding>
+            <element signature="e#991#992#0" expanded="true" />
+            <element signature="e#1035#1036#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basic-server/src/main/java/com/charon/basicserver/config/SmsCodeSecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-83">
+          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jwt-server/src/main/java/com/charon/jwtserver/util/JwtTokenUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2350">
+          <caret line="104" selection-start-line="104" selection-end-line="104" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jwt-server/src/main/java/com/charon/jwtserver/controller/JwtAuthController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="38" column="59" selection-start-line="38" selection-start-column="59" selection-end-line="38" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jwt-server/src/main/java/com/charon/jwtserver/service/JwtAuthService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="45" column="40" selection-start-line="45" selection-start-column="40" selection-end-line="45" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jwt-server/src/main/java/com/charon/jwtserver/filter/JwtAuthenticationTokenFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basic-server/src/main/resources/public/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-216">
+          <caret line="34" column="13" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basic-server/src/main/java/com/charon/basicserver/config/SecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="678">
+          <caret line="92" column="14" lean-forward="true" selection-start-line="92" selection-start-column="14" selection-end-line="92" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jwt-server/src/main/java/com/charon/jwtserver/controller/HelloController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="11" column="64" selection-start-line="11" selection-start-column="64" selection-end-line="11" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jwt-server/src/test/java/com/security/jwt/JwtApplicationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="44" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jwt-server/src/main/resources/application-dev.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oath2-as/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oath2-as/pom.xml">
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="62" column="50" selection-start-line="62" selection-start-column="24" selection-end-line="62" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jwt-server/pom.xml">
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="63" column="50" selection-start-line="63" selection-start-column="24" selection-end-line="63" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oath2-as/src/main/java/com/charon/oath2as/service/MyRBACService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oath2-as/src/main/java/com/charon/oath2as/service/MyUserDetailsService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="30" column="16" selection-start-line="30" selection-start-column="16" selection-end-line="30" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oath2-as/src/test/java/com/charon/oath2as/Oath2asApplicationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oath2-as/src/main/java/com/charon/oath2as/mapper/MyUserDetailsServiceMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-69">
+          <caret line="22" column="11" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oath2-as/src/main/java/com/charon/oath2as/model/MyUserDetails.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jwt-server/src/main/java/com/charon/jwtserver/config/SecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="94">
+          <caret line="100" column="50" lean-forward="true" selection-start-line="100" selection-start-column="50" selection-end-line="100" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oath2-as/src/main/java/com/charon/oath2as/Oath2asApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="79">
+          <caret line="9" column="39" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#251#252#0" expanded="true" />
+            <element signature="e#320#321#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oath2-as/src/main/java/com/charon/oath2as/config/SecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="29" column="7" lean-forward="true" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#707#708#0" expanded="true" />
+            <element signature="e#757#758#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oath2-as/src/main/java/com/charon/oath2as/config/OAuth2AuthorizationServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="38" column="52" selection-start-line="38" selection-start-column="46" selection-end-line="38" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.33760187" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.33760187" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.33760187" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>basic-server</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.33760187" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: antlr:antlr:2.7.2</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.33760187" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
