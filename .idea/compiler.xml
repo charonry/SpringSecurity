@@ -7,8 +7,8 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="basic-server" />
-        <module name="jwt-server" />
         <module name="oath2-as" />
+        <module name="jwt-server" />
         <module name="huawei" />
       </profile>
     </annotationProcessing>
