@@ -1,5 +1,6 @@
 package com.charon.oath2as.config;
 
+import com.charon.oath2as.service.MyUserDetailsService;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.crypto.password.PasswordEncoder;
@@ -27,9 +28,13 @@ public class OAuth2AuthorizationServer extends AuthorizationServerConfigurerAdap
     @Resource
     private AuthenticationManager authenticationManager;
 
+    @Resource
+    MyUserDetailsService myUserDetailsService;
+
     @Override
     public void configure(AuthorizationServerEndpointsConfigurer endpoints) throws Exception {
-        endpoints.authenticationManager(authenticationManager);
+        endpoints.authenticationManager(authenticationManager)
+                .userDetailsService(myUserDetailsService);
     }
 
     @Override
@@ -55,9 +60,16 @@ public class OAuth2AuthorizationServer extends AuthorizationServerConfigurerAdap
                 .withClient("client1").secret(passwordEncoder.encode("123456"))
                 // 回调地址就是我们在QQ互联配置的应用回调地址。配置回调地址，选填。
                 .redirectUris("http://localhost:8888/callback")
-                // 授权码模式
-                .authorizedGrantTypes("authorization_code","password","implicit","client_credentials")
-                // 可授权的 Scope  Mycode Wm2wzn
-                .scopes("all");
+                // 授权类型
+                .authorizedGrantTypes("authorization_code","password","implicit","client_credentials"
+                        ,"refresh_token")
+                // 可授权的 Scope
+                .scopes("all")
+                //token有效期设置2个小时
+                .accessTokenValiditySeconds(60*60*2)
+                //Refresh_token:12个小时
+                .refreshTokenValiditySeconds(60*60*12);
     }
+    // 获取授权码
+    // http://localhost:8001/oauth/authorize?client_id=client1&redirect_uri=http://localhost:8888/callback&response_type=code&scope=all
 }
