@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f7520f7f-2068-4e45-a5f0-077a11df020f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/oath2-as/src/main/java/com/charon/oath2as/config/OAuth2ResourceServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oath2-as/src/main/java/com/charon/oath2as/controller/HelloController.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/oath2-as/target/classes/application.yml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/oath2-as/target/classes/com/charon/oath2as/Oath2asApplication.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/oath2-as/target/classes/com/charon/oath2as/config/OAuth2AuthorizationServer.class" afterDir="false" />
@@ -46,8 +48,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/oath2-as/src/main/java/com/charon/oath2as/config/OAuth2AuthorizationServer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="52" column="79" selection-start-line="52" selection-start-column="79" selection-end-line="52" selection-end-column="79" />
+            <state relative-caret-position="208">
+              <caret line="73" column="135" lean-forward="true" selection-start-line="73" selection-start-column="7" selection-end-line="73" selection-end-column="135" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -56,10 +58,36 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/oath2-as/src/main/java/com/charon/oath2as/config/OAuth2ResourceServer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="372">
+              <caret line="23" column="40" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="40" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/oath2-as/src/main/java/com/charon/oath2as/controller/HelloController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="372">
+              <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#396#397#0" expanded="true" />
+                <element signature="e#449#450#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/oath2-as/src/main/java/com/charon/oath2as/config/SecurityConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="531">
-              <caret line="40" column="5" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
+            <state relative-caret-position="-25">
+              <caret line="26" column="25" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1100#1101#0" expanded="true" />
@@ -71,6 +99,13 @@
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -80,6 +115,8 @@
         <option value="$PROJECT_DIR$/oath2-as/src/main/java/com/charon/oath2as/Oath2asApplication.java" />
         <option value="$PROJECT_DIR$/oath2-as/src/main/java/com/charon/oath2as/config/SecurityConfig.java" />
         <option value="$PROJECT_DIR$/oath2-as/src/main/java/com/charon/oath2as/config/OAuth2AuthorizationServer.java" />
+        <option value="$PROJECT_DIR$/oath2-as/src/main/java/com/charon/oath2as/controller/HelloController.java" />
+        <option value="$PROJECT_DIR$/oath2-as/src/main/java/com/charon/oath2as/config/OAuth2ResourceServer.java" />
       </list>
     </option>
   </component>
@@ -264,7 +301,7 @@
       <updated>1619357738027</updated>
       <workItem from="1619357739646" duration="599000" />
       <workItem from="1619358352479" duration="1934000" />
-      <workItem from="1619437700267" duration="1776000" />
+      <workItem from="1619437700267" duration="5064000" />
     </task>
     <task id="LOCAL-00001" summary="认证服务器-密码模式">
       <created>1619440136798</created>
@@ -280,16 +317,31 @@
       <option name="project" value="LOCAL" />
       <updated>1619440528346</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="认证服务器-客户端模式">
+      <created>1619440742257</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1619440742257</updated>
+    </task>
+    <task id="LOCAL-00004" summary="AccessToken令牌的刷新">
+      <created>1619442638045</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1619442638045</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4321000" />
+    <option name="totallyTimeSpent" value="7609000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6606061" visible="true" weight="0.25067025" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6606061" visible="true" weight="0.25067025" />
       <window_info id="Structure" order="1" sideWeight="0.33939394" side_tool="true" weight="0.33109918" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -300,7 +352,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3286119" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.33144477" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.33144477" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3286119" />
@@ -383,7 +435,10 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="认证服务器-密码模式" />
     <MESSAGE value="认证服务器-简化模式" />
-    <option name="LAST_COMMIT_MESSAGE" value="认证服务器-简化模式" />
+    <MESSAGE value="认证服务器-客户端模式" />
+    <MESSAGE value="AccessToken令牌的刷新" />
+    <MESSAGE value="编码实现资源服务器--合二为一" />
+    <option name="LAST_COMMIT_MESSAGE" value="编码实现资源服务器--合二为一" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/oath2-as/pom.xml">
@@ -437,8 +492,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/oath2-as/src/main/java/com/charon/oath2as/config/SecurityConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="531">
-          <caret line="40" column="5" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
+        <state relative-caret-position="-25">
+          <caret line="26" column="25" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1100#1101#0" expanded="true" />
@@ -447,10 +502,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/oath2-as/src/main/java/com/charon/oath2as/controller/HelloController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="372">
+          <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#396#397#0" expanded="true" />
+            <element signature="e#449#450#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oath2-as/src/main/java/com/charon/oath2as/config/OAuth2ResourceServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="372">
+          <caret line="23" column="40" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/oath2-as/src/main/java/com/charon/oath2as/config/OAuth2AuthorizationServer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="52" column="79" selection-start-line="52" selection-start-column="79" selection-end-line="52" selection-end-column="79" />
+        <state relative-caret-position="208">
+          <caret line="73" column="135" lean-forward="true" selection-start-line="73" selection-start-column="7" selection-end-line="73" selection-end-column="135" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
