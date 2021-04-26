@@ -11,10 +11,7 @@
       <change afterPath="$PROJECT_DIR$/oath2-as/target/classes/com/charon/oath2as/service/MyRBACService.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/oath2-as/target/classes/com/charon/oath2as/service/MyUserDetailsService.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/oath2-as/target/test-classes/com/charon/oath2as/Oath2asApplicationTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oath2-as/src/main/java/com/charon/oath2as/config/OAuth2AuthorizationServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/oath2-as/src/main/java/com/charon/oath2as/config/OAuth2AuthorizationServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oath2-as/src/main/java/com/charon/oath2as/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/oath2-as/src/main/java/com/charon/oath2as/config/SecurityConfig.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -50,7 +47,7 @@
         <entry file="file://$PROJECT_DIR$/oath2-as/src/main/java/com/charon/oath2as/config/OAuth2AuthorizationServer.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="275">
-              <caret line="52" column="68" selection-start-line="52" selection-start-column="68" selection-end-line="52" selection-end-column="68" />
+              <caret line="52" column="79" selection-start-line="52" selection-start-column="79" selection-end-line="52" selection-end-column="79" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -267,18 +264,32 @@
       <updated>1619357738027</updated>
       <workItem from="1619357739646" duration="599000" />
       <workItem from="1619358352479" duration="1934000" />
-      <workItem from="1619437700267" duration="1220000" />
+      <workItem from="1619437700267" duration="1776000" />
     </task>
+    <task id="LOCAL-00001" summary="认证服务器-密码模式">
+      <created>1619440136798</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1619440136798</updated>
+    </task>
+    <task id="LOCAL-00002" summary="认证服务器-简化模式">
+      <created>1619440528346</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1619440528346</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3765000" />
+    <option name="totallyTimeSpent" value="4321000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6606061" visible="true" weight="0.25067025" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6606061" visible="true" weight="0.25067025" />
       <window_info id="Structure" order="1" sideWeight="0.33939394" side_tool="true" weight="0.33109918" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -289,7 +300,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3286119" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.33144477" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.33144477" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3286119" />
@@ -369,6 +380,11 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="认证服务器-密码模式" />
+    <MESSAGE value="认证服务器-简化模式" />
+    <option name="LAST_COMMIT_MESSAGE" value="认证服务器-简化模式" />
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/oath2-as/pom.xml">
       <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
@@ -434,7 +450,7 @@
     <entry file="file://$PROJECT_DIR$/oath2-as/src/main/java/com/charon/oath2as/config/OAuth2AuthorizationServer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="275">
-          <caret line="52" column="68" selection-start-line="52" selection-start-column="68" selection-end-line="52" selection-end-column="68" />
+          <caret line="52" column="79" selection-start-line="52" selection-start-column="79" selection-end-line="52" selection-end-column="79" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

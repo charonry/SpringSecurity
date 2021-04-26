@@ -41,6 +41,12 @@ public class OAuth2AuthorizationServer extends AuthorizationServerConfigurerAdap
     }
 
 
+    /**
+     * 客户端模式实际上是密码模式的简化，无需配置或使用资源拥有者账号。因为它没有用户的概念，
+     * 直接与授权服务器交互，通过 Client 的编号(client_id)和密码(client_secret)来保证安全性。
+     * @param clients
+     * @throws Exception
+     */
     @Override
     public void configure(ClientDetailsServiceConfigurer clients) throws Exception {
         clients.inMemory()
@@ -50,7 +56,7 @@ public class OAuth2AuthorizationServer extends AuthorizationServerConfigurerAdap
                 // 回调地址就是我们在QQ互联配置的应用回调地址。配置回调地址，选填。
                 .redirectUris("http://localhost:8888/callback")
                 // 授权码模式
-                .authorizedGrantTypes("authorization_code","password","implicit")
+                .authorizedGrantTypes("authorization_code","password","implicit","client_credentials")
                 // 可授权的 Scope  Mycode Wm2wzn
                 .scopes("all");
     }
