@@ -50,7 +50,7 @@ public class OAuth2AuthorizationServer extends AuthorizationServerConfigurerAdap
                 // 回调地址就是我们在QQ互联配置的应用回调地址。配置回调地址，选填。
                 .redirectUris("http://localhost:8888/callback")
                 // 授权码模式
-                .authorizedGrantTypes("authorization_code","password")
+                .authorizedGrantTypes("authorization_code","password","implicit")
                 // 可授权的 Scope  Mycode Wm2wzn
                 .scopes("all");
     }
