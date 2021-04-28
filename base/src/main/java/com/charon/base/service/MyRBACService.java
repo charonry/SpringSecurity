@@ -1,4 +1,4 @@
-package com.charon.oauthrs.service;
+package com.charon.base.service;
 
 
 import org.springframework.security.core.Authentication;

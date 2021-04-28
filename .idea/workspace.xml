@@ -1,28 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f7520f7f-2068-4e45-a5f0-077a11df020f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="f7520f7f-2068-4e45-a5f0-077a11df020f" name="Default Changelist" comment="补充:认证资源服务器分离的通用内容和sql">
+      <change afterPath="$PROJECT_DIR$/base/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/base/src/main/java/com/charon/base/mapper/MyUserDetailsServiceMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oath2-as/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/oath2-as/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oath2-as/src/main/java/com/charon/oath2as/config/OAuth2AuthorizationServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/oath2-as/src/main/java/com/charon/oath2as/config/OAuth2AuthorizationServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oath2-as/src/main/java/com/charon/oath2as/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/oath2-as/src/main/java/com/charon/oath2as/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oath2-as/src/main/java/com/charon/oath2as/mapper/MyUserDetailsServiceMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oath2-as/src/main/java/com/charon/oath2as/model/MyUserDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/MyUserDetails.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oath2-as/src/main/java/com/charon/oath2as/service/MyRBACService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/MyRBACService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oath2-as/src/main/java/com/charon/oath2as/service/MyUserDetailsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/MyUserDetailsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oath2-as/target/classes/com/charon/oath2as/config/OAuth2AuthorizationServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/oath2-as/target/classes/com/charon/oath2as/config/OAuth2AuthorizationServer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oath2-as/target/classes/com/charon/oath2as/config/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/oath2-as/target/classes/com/charon/oath2as/config/SecurityConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oath2-as/target/classes/com/charon/oath2as/mapper/MyUserDetailsServiceMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oath2-as/target/classes/com/charon/oath2as/model/MyUserDetails.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oath2-as/target/classes/com/charon/oath2as/service/MyRBACService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oath2-as/target/classes/com/charon/oath2as/service/MyUserDetailsService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oauth-rs/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/oauth-rs/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oauth-rs/src/main/java/com/charon/config/OAuth2ResourceServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/oauth-rs/src/main/java/com/charon/config/OAuth2ResourceServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oauth-rs/src/main/java/com/charon/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/oauth-rs/src/main/java/com/charon/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oauth-rs/src/main/java/com/charon/mapper/MyUserDetailsServiceMapper.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/oauth-rs/src/main/java/com/charon/oauthrs/model/MyUserDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/base/src/main/java/com/charon/base/model/MyUserDetails.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/oauth-rs/src/main/java/com/charon/oauthrs/service/MyRBACService.java" beforeDir="false" afterPath="$PROJECT_DIR$/base/src/main/java/com/charon/base/service/MyRBACService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/oauth-rs/src/main/java/com/charon/oauthrs/service/MyUserDetailsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/base/src/main/java/com/charon/base/service/MyUserDetailsService.java" afterDir="false" />
@@ -49,7 +31,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/oath2-as/src/main/java/com/charon/oath2as/config/OAuth2AuthorizationServer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="124">
+            <state relative-caret-position="467">
               <caret line="87" column="1" lean-forward="true" selection-start-line="86" selection-start-column="7" selection-end-line="87" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -322,6 +304,14 @@
               <item name="charon" type="462c0819:PsiDirectoryNode" />
               <item name="oauthrs" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="SpringSecurity" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringSecurity" type="462c0819:PsiDirectoryNode" />
+              <item name="oauth-rs" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -338,7 +328,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/oauth-rs/src/main/resources/sql" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
@@ -426,7 +416,7 @@
       <workItem from="1619357739646" duration="599000" />
       <workItem from="1619358352479" duration="1934000" />
       <workItem from="1619437700267" duration="5106000" />
-      <workItem from="1619609935656" duration="6790000" />
+      <workItem from="1619609935656" duration="7690000" />
     </task>
     <task id="LOCAL-00001" summary="认证服务器-密码模式">
       <created>1619440136798</created>
@@ -477,17 +467,23 @@
       <option name="project" value="LOCAL" />
       <updated>1619613966214</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="认证资源服务器---JdbcTokenStore">
+      <created>1619617195063</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1619617195063</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14441000" />
+    <option name="totallyTimeSpent" value="15341000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6606061" visible="true" weight="0.25402144" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6606061" visible="true" weight="0.25402144" />
       <window_info id="Structure" order="1" sideWeight="0.33939394" side_tool="true" weight="0.33109918" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -498,7 +494,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3286119" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.4858357" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4858357" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3286119" />
@@ -610,7 +606,8 @@
     <MESSAGE value="编码实现资源服务器--合二为一" />
     <MESSAGE value="认证资源服务器分离准备环境" />
     <MESSAGE value="认证资源服务器---默认分离" />
-    <option name="LAST_COMMIT_MESSAGE" value="认证资源服务器---默认分离" />
+    <MESSAGE value="认证资源服务器---JdbcTokenStore" />
+    <option name="LAST_COMMIT_MESSAGE" value="认证资源服务器---JdbcTokenStore" />
   </component>
   <component name="editorHistoryManager">
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.0.8.RELEASE/spring-context-5.0.8.RELEASE.jar!/org/springframework/context/annotation/ComponentScan.class">
@@ -831,7 +828,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/oath2-as/src/main/java/com/charon/oath2as/config/OAuth2AuthorizationServer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
+        <state relative-caret-position="467">
           <caret line="87" column="1" lean-forward="true" selection-start-line="86" selection-start-column="7" selection-end-line="87" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />

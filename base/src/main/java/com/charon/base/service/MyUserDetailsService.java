@@ -1,9 +1,9 @@
-package com.charon.oauthrs.service;
+package com.charon.base.service;
 
 
 
-import com.charon.mapper.MyUserDetailsServiceMapper;
-import com.charon.oauthrs.model.MyUserDetails;
+import com.charon.base.mapper.MyUserDetailsServiceMapper;
+import com.charon.base.model.MyUserDetails;
 import org.springframework.security.core.authority.AuthorityUtils;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
