@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="basic-server" />
+        <module name="oauth-rs" />
         <module name="oath2-as" />
         <module name="jwt-server" />
         <module name="huawei" />
@@ -22,6 +23,7 @@
       <module name="huaweicloud" options="-parameters" />
       <module name="jwt-server" options="" />
       <module name="oath2-as" options="" />
+      <module name="oauth-rs" options="" />
     </option>
   </component>
 </project>

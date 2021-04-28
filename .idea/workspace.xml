@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f7520f7f-2068-4e45-a5f0-077a11df020f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/oath2-as/src/main/java/com/charon/oath2as/config/OAuth2ResourceServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/oath2-as/src/main/java/com/charon/oath2as/controller/HelloController.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/oath2-as/target/classes/application.yml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/oath2-as/target/classes/com/charon/oath2as/Oath2asApplication.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/oath2-as/target/classes/com/charon/oath2as/config/OAuth2AuthorizationServer.class" afterDir="false" />
@@ -13,6 +11,19 @@
       <change afterPath="$PROJECT_DIR$/oath2-as/target/classes/com/charon/oath2as/service/MyRBACService.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/oath2-as/target/classes/com/charon/oath2as/service/MyUserDetailsService.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/oath2-as/target/test-classes/com/charon/oath2as/Oath2asApplicationTests.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth-rs/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth-rs/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth-rs/src/main/java/com/charon/controller/HelloController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth-rs/src/main/java/com/charon/mapper/MyUserDetailsServiceMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth-rs/src/main/java/com/charon/oauthrs/OauthrsApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth-rs/src/main/java/com/charon/oauthrs/model/MyUserDetails.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth-rs/src/main/java/com/charon/oauthrs/service/MyRBACService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth-rs/src/main/java/com/charon/oauthrs/service/MyUserDetailsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth-rs/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oauth-rs/src/test/java/com/charon/oauthrs/OauthrsApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -21,6 +32,7 @@
     <ignored path="$PROJECT_DIR$/basic-server/target/" />
     <ignored path="$PROJECT_DIR$/huawei/target/" />
     <ignored path="$PROJECT_DIR$/jwt-server/target/" />
+    <ignored path="$PROJECT_DIR$/oauth-rs/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,23 +45,49 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/oath2-as/src/main/java/com/charon/oath2as/Oath2asApplication.java">
+        <entry file="file://$PROJECT_DIR$/oath2-as/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-700">
+              <caret line="32" column="27" selection-start-line="22" selection-start-column="3" selection-end-line="32" selection-end-column="27" />
+            </state>
+          </provider>
+          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/oauth-rs/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1630">
+              <caret line="80" column="24" selection-start-line="73" selection-start-column="8" selection-end-line="80" selection-end-column="24" />
+            </state>
+          </provider>
+          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/oauth-rs/src/main/java/com/charon/oauthrs/OauthrsApplication.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="150">
-              <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
-              <folding>
-                <element signature="e#446#447#0" expanded="true" />
-                <element signature="e#515#516#0" expanded="true" />
-              </folding>
+              <caret line="9" column="42" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/oath2-as/src/main/java/com/charon/oath2as/config/OAuth2AuthorizationServer.java">
+        <entry file="file://$PROJECT_DIR$/oauth-rs/src/main/java/com/charon/controller/HelloController.java">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/oauth-rs/src/main/java/com/charon/oauthrs/service/MyRBACService.java">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/oauth-rs/src/main/java/com/charon/oauthrs/service/MyUserDetailsService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="73" column="135" lean-forward="true" selection-start-line="73" selection-start-column="7" selection-end-line="73" selection-end-column="135" />
+            <state relative-caret-position="500">
+              <caret line="31" column="15" lean-forward="true" selection-start-line="31" selection-start-column="15" selection-end-line="31" selection-end-column="15" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -58,10 +96,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/oath2-as/src/main/java/com/charon/oath2as/config/OAuth2ResourceServer.java">
+        <entry file="file://$PROJECT_DIR$/oauth-rs/src/main/java/com/charon/oauthrs/model/MyUserDetails.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="372">
-              <caret line="23" column="40" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="40" />
+            <state relative-caret-position="284">
+              <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -70,28 +108,12 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/oath2-as/src/main/java/com/charon/oath2as/controller/HelloController.java">
+        <entry file="file://$PROJECT_DIR$/oauth-rs/src/main/java/com/charon/mapper/MyUserDetailsServiceMapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="372">
-              <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+            <state relative-caret-position="75">
+              <caret line="22" column="11" lean-forward="true" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#396#397#0" expanded="true" />
-                <element signature="e#449#450#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/oath2-as/src/main/java/com/charon/oath2as/config/SecurityConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-25">
-              <caret line="26" column="25" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="25" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1100#1101#0" expanded="true" />
-                <element signature="e#1150#1151#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -117,6 +139,13 @@
         <option value="$PROJECT_DIR$/oath2-as/src/main/java/com/charon/oath2as/config/OAuth2AuthorizationServer.java" />
         <option value="$PROJECT_DIR$/oath2-as/src/main/java/com/charon/oath2as/controller/HelloController.java" />
         <option value="$PROJECT_DIR$/oath2-as/src/main/java/com/charon/oath2as/config/OAuth2ResourceServer.java" />
+        <option value="$PROJECT_DIR$/oauth-rs/pom.xml" />
+        <option value="$PROJECT_DIR$/oauth-rs/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/oauth-rs/src/main/java/com/charon/oauthrs/OauthrsApplication.java" />
+        <option value="$PROJECT_DIR$/oauth-rs/src/main/java/com/charon/oauthrs/model/MyUserDetails.java" />
+        <option value="$PROJECT_DIR$/oauth-rs/src/main/java/com/charon/oauthrs/service/MyUserDetailsService.java" />
+        <option value="$PROJECT_DIR$/oauth-rs/src/main/java/com/charon/mapper/MyUserDetailsServiceMapper.java" />
+        <option value="$PROJECT_DIR$/oauth-rs/src/main/java/com/charon/controller/HelloController.java" />
       </list>
     </option>
   </component>
@@ -145,8 +174,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -228,12 +255,172 @@
               <item name="oath2-as" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="charon" type="462c0819:PsiDirectoryNode" />
+              <item name="oath2as" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringSecurity" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringSecurity" type="462c0819:PsiDirectoryNode" />
+              <item name="oath2-as" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="charon" type="462c0819:PsiDirectoryNode" />
+              <item name="oath2as" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringSecurity" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringSecurity" type="462c0819:PsiDirectoryNode" />
+              <item name="oath2-as" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="charon" type="462c0819:PsiDirectoryNode" />
+              <item name="oath2as" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringSecurity" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringSecurity" type="462c0819:PsiDirectoryNode" />
+              <item name="oath2-as" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="charon" type="462c0819:PsiDirectoryNode" />
+              <item name="oath2as" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringSecurity" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringSecurity" type="462c0819:PsiDirectoryNode" />
+              <item name="oath2-as" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringSecurity" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringSecurity" type="462c0819:PsiDirectoryNode" />
+              <item name="oauth-rs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringSecurity" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringSecurity" type="462c0819:PsiDirectoryNode" />
+              <item name="oauth-rs" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringSecurity" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringSecurity" type="462c0819:PsiDirectoryNode" />
+              <item name="oauth-rs" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringSecurity" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringSecurity" type="462c0819:PsiDirectoryNode" />
+              <item name="oauth-rs" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringSecurity" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringSecurity" type="462c0819:PsiDirectoryNode" />
+              <item name="oauth-rs" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringSecurity" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringSecurity" type="462c0819:PsiDirectoryNode" />
+              <item name="oauth-rs" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="charon" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringSecurity" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringSecurity" type="462c0819:PsiDirectoryNode" />
+              <item name="oauth-rs" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="charon" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringSecurity" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringSecurity" type="462c0819:PsiDirectoryNode" />
+              <item name="oauth-rs" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="charon" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringSecurity" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringSecurity" type="462c0819:PsiDirectoryNode" />
+              <item name="oauth-rs" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="charon" type="462c0819:PsiDirectoryNode" />
+              <item name="oauthrs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringSecurity" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringSecurity" type="462c0819:PsiDirectoryNode" />
+              <item name="oauth-rs" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="charon" type="462c0819:PsiDirectoryNode" />
+              <item name="oauthrs" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringSecurity" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringSecurity" type="462c0819:PsiDirectoryNode" />
+              <item name="oauth-rs" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="charon" type="462c0819:PsiDirectoryNode" />
+              <item name="oauthrs" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringSecurity" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringSecurity" type="462c0819:PsiDirectoryNode" />
+              <item name="oauth-rs" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -244,8 +431,19 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/oauth-rs/src/main/java/com/charon/oauthrs/service" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.charon.controller" />
+      <recent name="com.charon.mapper" />
+      <recent name="com.charon.oauthrs.model" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\IDEA_worker\SpringSecurity\oauth-rs\src\main\java\com\charon\oauthrs\service" />
+      <recent name="D:\IDEA_worker\SpringSecurity\oauth-rs\src\main\resources" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -259,7 +457,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.Oath2asApplication">
+  <component name="RunManager" selected="Spring Boot.OauthrsApplication">
     <configuration name="BasicServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="basic-server" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.charon.basicserver.BasicServerApplication" />
@@ -288,6 +486,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="OauthrsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="oauth-rs" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.charon.oauthrs.OauthrsApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -301,7 +506,8 @@
       <updated>1619357738027</updated>
       <workItem from="1619357739646" duration="599000" />
       <workItem from="1619358352479" duration="1934000" />
-      <workItem from="1619437700267" duration="5064000" />
+      <workItem from="1619437700267" duration="5106000" />
+      <workItem from="1619609935656" duration="760000" />
     </task>
     <task id="LOCAL-00001" summary="认证服务器-密码模式">
       <created>1619440136798</created>
@@ -331,17 +537,23 @@
       <option name="project" value="LOCAL" />
       <updated>1619442638045</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="编码实现资源服务器--合二为一">
+      <created>1619443943094</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1619443943094</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7609000" />
+    <option name="totallyTimeSpent" value="8411000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6606061" visible="true" weight="0.25067025" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6606061" visible="true" weight="0.25402144" />
       <window_info id="Structure" order="1" sideWeight="0.33939394" side_tool="true" weight="0.33109918" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -352,7 +564,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3286119" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.33144477" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.33144477" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3286119" />
@@ -441,10 +653,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="编码实现资源服务器--合二为一" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/oath2-as/pom.xml">
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.0.8.RELEASE/spring-context-5.0.8.RELEASE.jar!/org/springframework/context/annotation/ComponentScan.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
@@ -453,12 +661,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/jwt-server/pom.xml">
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="109">
           <caret line="106" selection-start-line="106" selection-end-line="106" />
         </state>
       </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
     </entry>
     <entry file="file://$PROJECT_DIR$/jwt-server/src/main/java/com/charon/jwtserver/JwtApplication.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -479,6 +687,72 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/oath2-as/src/main/java/com/charon/oath2as/config/OAuth2ResourceServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="23" column="40" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oath2-as/src/main/java/com/charon/oath2as/controller/HelloController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#396#397#0" expanded="true" />
+            <element signature="e#449#450#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oath2-as/src/main/java/com/charon/oath2as/config/SecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="26" column="25" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oath2-as/src/main/java/com/charon/oath2as/config/OAuth2AuthorizationServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="443">
+          <caret line="73" column="135" selection-start-line="73" selection-start-column="7" selection-end-line="73" selection-end-column="135" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oauth-rs/src/test/java/com/charon/oauthrs/OauthrsApplicationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oath2-as/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oauth-rs/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/oath2-as/src/main/java/com/charon/oath2as/Oath2asApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -490,49 +764,64 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/oath2-as/src/main/java/com/charon/oath2as/config/SecurityConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-25">
-          <caret line="26" column="25" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1100#1101#0" expanded="true" />
-            <element signature="e#1150#1151#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/oauth-rs/src/main/java/com/charon/oauthrs/service/MyRBACService.java">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/oath2-as/src/main/java/com/charon/oath2as/controller/HelloController.java">
+    <entry file="file://$PROJECT_DIR$/oauth-rs/src/main/java/com/charon/oauthrs/model/MyUserDetails.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#396#397#0" expanded="true" />
-            <element signature="e#449#450#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/oath2-as/src/main/java/com/charon/oath2as/config/OAuth2ResourceServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="23" column="40" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="40" />
+        <state relative-caret-position="284">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/oath2-as/src/main/java/com/charon/oath2as/config/OAuth2AuthorizationServer.java">
+    <entry file="file://$PROJECT_DIR$/oauth-rs/src/main/java/com/charon/oauthrs/service/MyUserDetailsService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="73" column="135" lean-forward="true" selection-start-line="73" selection-start-column="7" selection-end-line="73" selection-end-column="135" />
+        <state relative-caret-position="500">
+          <caret line="31" column="15" lean-forward="true" selection-start-line="31" selection-start-column="15" selection-end-line="31" selection-end-column="15" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oauth-rs/src/main/java/com/charon/mapper/MyUserDetailsServiceMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="22" column="11" lean-forward="true" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oath2-as/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-700">
+          <caret line="32" column="27" selection-start-line="22" selection-start-column="3" selection-end-line="32" selection-end-column="27" />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oauth-rs/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1630">
+          <caret line="80" column="24" selection-start-line="73" selection-start-column="8" selection-end-line="80" selection-end-column="24" />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oauth-rs/src/main/java/com/charon/oauthrs/OauthrsApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="9" column="42" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oauth-rs/src/main/java/com/charon/controller/HelloController.java">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>
