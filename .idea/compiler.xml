@@ -6,11 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="basic-server" />
         <module name="oauth-rs" />
         <module name="oath2-as" />
-        <module name="jwt-server" />
         <module name="huawei" />
+        <module name="jwt-server" />
+        <module name="base" />
+        <module name="basic-server" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -19,6 +20,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="base" options="" />
       <module name="huawei" options="-parameters" />
       <module name="huaweicloud" options="-parameters" />
       <module name="jwt-server" options="" />

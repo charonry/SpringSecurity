@@ -1,6 +1,6 @@
 package com.charon.oath2as.config;
 
-import com.charon.oath2as.service.MyUserDetailsService;
+import com.charon.base.service.MyUserDetailsService;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.AuthenticationManager;

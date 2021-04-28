@@ -1,6 +1,6 @@
 package com.charon.config;
 
-import com.charon.oauthrs.service.MyUserDetailsService;
+import com.charon.base.service.MyUserDetailsService;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.AuthenticationManager;

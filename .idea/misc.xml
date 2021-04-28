@@ -10,6 +10,7 @@
         <option value="$PROJECT_DIR$/jwt-server/pom.xml" />
         <option value="$PROJECT_DIR$/oath2-as/pom.xml" />
         <option value="$PROJECT_DIR$/oauth-rs/pom.xml" />
+        <option value="$PROJECT_DIR$/base/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
